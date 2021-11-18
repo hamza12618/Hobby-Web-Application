@@ -23,7 +23,6 @@ public class Car {
 	private String regNumber;
 	
 	@ManyToOne
-
 	private Garage garage;
 
 	public Car(String carName, String regNumber) {

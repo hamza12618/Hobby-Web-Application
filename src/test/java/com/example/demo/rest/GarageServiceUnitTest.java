@@ -1,35 +1,34 @@
 //package com.example.demo.rest;
 //
-//public class GarageServiceUnitTest {
-//
-//}
 //package com.qa.springboottesting.service;
 //
-//import static org.junit.Assert.assertEquals;
 //import java.util.ArrayList;
 //import java.util.List;
-//import org.junit.Test;
-//import org.junit.runner.RunWith;
 //import org.mockito.InjectMocks;
 //import org.mockito.Mock;
 //import org.mockito.Mockito;
 //import org.mockito.junit.MockitoJUnitRunner;
-//import com.qa.springboottesting.domain.Music;
-//import com.qa.springboottesting.repos.MusicRepo;
+//
+//import com.example.demo.domain.Garage;
+//import com.example.demo.repo.GarageRepo;
 //
 //@RunWith(MockitoJUnitRunner.class)
-//public class MusicServiceUnitTest {
+//public class GarageServiceUnitTest {
+//
+//}
+//
+//
 //	
 //	@InjectMocks
-//	private MusicService service;
+//	private GarageService service;
 //	
 //	@Mock
-//	private MusicRepo repo;
+//	private GarageRepo repo;
 //	
 //	@Test
 //	public void createTest() {
-//		Music input = new Music("Single", "Test Song", "Test Artist", 2021);
-//		Music output = new Music(1L, "Single", "Test Song", "Test Artist", 2021);
+//        Garage input = new Garage("BMW PARK ROYAL", "NW10");
+//		Garage output = new Garage(1L, "BMW PARK ROYAL", "NW10");
 //		
 //		Mockito.when(this.repo.save(input)).thenReturn(output);
 //		
@@ -40,8 +39,8 @@
 //	
 //	@Test
 //	public void getAllTest() {
-//		List<Music> output = new ArrayList<>();
-//		output.add(new Music("Single", "Test Song", "Test Artist", 2021));
+//		List<Garage> output = new ArrayList<>();
+//		output.add(new Garage("BMW PARK ROYAL", "NW10"));
 //		
 //		Mockito.when(this.repo.findAll()).thenReturn(output);
 //		

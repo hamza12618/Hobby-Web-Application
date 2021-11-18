@@ -56,8 +56,8 @@ public class CarController {
 	
 	// Custom Query - Get by Reg number
 	@GetMapping("/getByRegNumber/{regNumber}")
-	public ResponseEntity<Car> getByRegNumber(@PathVariable String regNumber) {
-		return new ResponseEntity<Car>(this.service.getByRegNumber(regNumber), HttpStatus.ACCEPTED);
+	public ResponseEntity<List<Car>> getByRegNumber(@PathVariable String regNumber) {
+		return new ResponseEntity<List<Car>>(this.service.getByRegNumber(regNumber), HttpStatus.ACCEPTED);
 	}
 	
 	

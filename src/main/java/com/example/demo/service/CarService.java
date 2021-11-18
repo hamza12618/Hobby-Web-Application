@@ -34,8 +34,8 @@ public class CarService {
 		}
 		
 		// Custom Query - Find by Reg number
-		public Car getByRegNumber(String regNumber) {
-			return this.repo.findByRegNumber(regNumber).get();
+		public List <Car> getByRegNumber(String regNumber) {
+			return this.repo.findCarByRegNumber(regNumber);
 			
 			
 		}
