@@ -35,8 +35,8 @@ public class GarageService {
 		}
 		
 		// Custom Query - Find by garage Location
-		public Garage getBygarageLocation(String garageLocation) {
-			return this.repo.findBygarageLocation(garageLocation).get();
+		public List <Garage> getBygarageLocation(String garageLocation) {
+			return this.repo.findGarageByGarageLocation(garageLocation);
 			
 			
 		}

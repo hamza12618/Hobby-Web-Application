@@ -56,8 +56,8 @@ private GarageService service;
 	
 	// Custom Query - Get by Reg number
 	@GetMapping("/getBygarageLocation/{garageLocation}")
-	public ResponseEntity<Garage> getBygarageLocation(@PathVariable String garageLocation) {
-		return new ResponseEntity<Garage>(this.service.getBygarageLocation(garageLocation), HttpStatus.ACCEPTED);
+	public ResponseEntity <List <Garage>> getBygarageLocation(@PathVariable String garageLocation) {
+		return new ResponseEntity <List <Garage>>(this.service.getBygarageLocation(garageLocation), HttpStatus.ACCEPTED);
 	}
 	
 	
