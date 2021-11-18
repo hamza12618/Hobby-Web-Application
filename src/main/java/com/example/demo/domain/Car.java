@@ -5,9 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
-public class CarDomain {
+public class Car {
 
 	
 	@Id
@@ -20,21 +21,26 @@ public class CarDomain {
 	
 	@Column(unique = true, nullable = false)
 	private String regNumber;
+	
+	@ManyToOne
 
-	public CarDomain(String carName, String regNumber) {
+	private Garage garage;
+
+	public Car(String carName, String regNumber) {
 		super();
 		this.carName = carName;
 		this.regNumber = regNumber;
 	}
 
-	public CarDomain(long carId, String carName, String regNumber) {
+	public Car(long carId, String carName, String regNumber) {
 		super();
 		this.carId = carId;
 		this.carName = carName;
 		this.regNumber = regNumber;
+		
 	}
 
-	public CarDomain() {
+	public Car() {
 		super();
 	}
 
@@ -80,7 +86,7 @@ public class CarDomain {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CarDomain other = (CarDomain) obj;
+		Car other = (Car) obj;
 		if (carId != other.carId)
 			return false;
 		if (carName == null) {

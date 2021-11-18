@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS `car` CASCADE;
+CREATE TABLE `car`
+(
+	`car_id` BIGINT PRIMARY KEY AUTO_INCREMENT,
+	`car_name` VARCHAR(255) NOT NULL,
+	`reg_number` VARCHAR(255) NOT NULL
+	
+	
+);
