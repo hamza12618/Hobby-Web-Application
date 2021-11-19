@@ -1,9 +1,15 @@
-INSERT INTO `garage`
+/*INSERT INTO `garage`
 	(`garage_name`, `garage_location`)
-values 
+VALUES
 	('BMW PARK ROYAL', 'NW10');
-
+*/
 INSERT INTO `car`
-	(`car_id`, `car_name`, `garage_garage_id`, `reg_number`)
-values 
-	(1,'BMW', 1, '2345');
+	(`car_name`, `garage_garage_id`, `reg_number`)
+VALUES 
+ ('Audi', 2, '4356');
+	/*
+	INSERT INTO `car`
+	(`car_name`, `garage_garage_id`, `reg_number`)
+VALUES
+	('BMW', 1, '2345');
+	*/
