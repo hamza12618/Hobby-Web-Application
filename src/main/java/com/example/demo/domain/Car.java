@@ -23,8 +23,14 @@ public class Car {
 	private String regNumber;
 	
 	@ManyToOne
-
 	private Garage garage;
+
+	public Car(String carName, String regNumber, Garage garage) {
+		super();
+		this.carName = carName;
+		this.regNumber = regNumber;
+		this.garage = garage;
+	}
 
 	public Car(String carName, String regNumber) {
 		super();
