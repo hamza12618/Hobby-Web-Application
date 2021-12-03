@@ -21,8 +21,8 @@ let deleteCar = () => {
 
     let newObject = {
         //  id = idValue,
-        carName = carName.value,
-        carRegistrationValue = carRegistration.value,
+        carName = carNameValue,
+        regNumber = carRegistrationValue,
 
     };
 
@@ -39,7 +39,7 @@ let deleteCar = () => {
 
 let deleteRequest = (type, category) => {
 
-    fetch(`http://localhost:9000/car/delete/${type}/${category}}`, {
+    fetch("http://localhost:9000/car/delete", {
         method: `DELETE`
     })
         .then((response) => {

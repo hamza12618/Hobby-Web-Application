@@ -22,10 +22,11 @@ let createCar = () => {
 
     let newObject = {
         //  id = idValue,
-        carName = carName.value,
-        carRegistrationValue = carRegistration.value,
+        carName: carNameValue,
+        regNumber: carRegistrationValue,
 
     };
+    console.log(newObject);
 
     // Run fetch function
     postFetch(newObject);

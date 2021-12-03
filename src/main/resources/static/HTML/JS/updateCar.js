@@ -1,12 +1,16 @@
 `use strict`;
+console.log("page connected");
+
 let carId = document.querySelector("#numberInput");
 let carName = document.querySelector("#carName");
 let carRegistration = document.querySelector("#carRegistration");
 
 let inputBtn = document.querySelector("#inputBtn");
-
+console.log(inputBtn);
 
 let putData = () => {
+
+
     let carNameValue = carName.value;
 
     let carRegistrationValue = carRegistration.value;
@@ -15,16 +19,16 @@ let putData = () => {
 
 
     inputcarName.value = "";
-    inputcarRgistration.value = "";
+    inputcarRegistration.value = "";
 
 
     let newObject = {
 
-        carName = carName.value,
-        carRegistrationValue = carRegistration.value,
+        carName = carNameValue,
+        regNumber = carRegistrationValue,
 
 
-    }
+    };
 
     putFetch(newObject);
 
