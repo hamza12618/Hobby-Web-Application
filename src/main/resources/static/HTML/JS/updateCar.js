@@ -9,7 +9,7 @@ let inputBtn = document.querySelector("#inputBtn");
 console.log(inputBtn);
 
 let putData = () => {
-
+    console.log("button clicked");
 
     let carNameValue = carName.value;
 
@@ -29,10 +29,10 @@ let putData = () => {
 
 
     };
-
+    console.log(newObject);
     putFetch(newObject);
 
-    return newObject
+
 };
 
 
@@ -56,4 +56,4 @@ let putFetch = (object) => {
 
 
 
-inputBtn.addEventListener('Click', updateCar);
+inputBtn.addEventListener('click', updateCar);
